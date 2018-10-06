@@ -17,7 +17,7 @@ def create_project_hash
   projects 
 end
 
-projects = {} 
+#projects = {} 
 
 
 
