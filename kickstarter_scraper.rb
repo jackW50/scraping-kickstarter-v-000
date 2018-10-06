@@ -14,4 +14,5 @@ end
     #image_link = p.css("div.project_thumbnail a img").attribute("src").value  
     #description = p.css("p.bbcard_blurb").text 
     #location = p.css("ul.project-meta li a span.location-name").text 
+    #percent funded = p.css("ul.project-stats li.first.funded strong").text 
 create_project_hash
