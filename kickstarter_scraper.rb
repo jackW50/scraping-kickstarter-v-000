@@ -15,7 +15,7 @@ def create_project_hash
     projects[title][:location] = p.css("ul.project-meta li span.location-name").text 
     projects[title][:percent_funded] = p.css("ul.project_stats li.first.funded strong").text.gsub("%", "").to_i 
   end 
-  new_hash 
+  projects  
 end
 
 #projects = {} 
