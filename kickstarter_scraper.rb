@@ -6,6 +6,7 @@ def create_project_hash
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
   #binding.pry 
+  projects = {}
   kickstarter.css("li.project.grid_4").each do |p|
     new_hash = projects[p.css("h2.bbcard_name strong a").to_sym] = {}
     new_hash[:image_link] = p.css("div.project_thumbnail a img").attribute("src").value 
