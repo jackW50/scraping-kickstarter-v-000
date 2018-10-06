@@ -13,5 +13,5 @@ end
     #title = p.css("h2.bbcard_name strong a")
     #image_link = p.css("div.project_thumbnail a img").attribute("src").value  
     #description = p.css("p.bbcard_blurb").text 
-    
+    #location = p.css("ul.project-meta li a span.location-name").text 
 create_project_hash
